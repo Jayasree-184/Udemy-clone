@@ -1,0 +1,397 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Gabarito", serif;
+}
+
+.navbar{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid black 1px;
+  gap: 10px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.navbar__s1__title{
+  color: #A435F0;
+}
+
+.navbar__explore{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar__explore__popup{
+  position: absolute;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 200px;
+  top: 30px;
+  left: 10px;
+  display: none;
+}
+
+.navbar__explore:hover .navbar__explore__popup{
+  display: block;
+}
+
+
+
+.navbar__s2{
+  padding: 10px;
+  border: solid black 1px;
+  border-radius: 30px;
+  width: 45%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+
+}
+
+.navbar__s2 input{
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  border-color: transparent;
+}
+
+.navbar__s2 input:focus{
+  outline: none;
+}
+
+.navbar__s3{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*Udemy business popup*/
+.udemybusiness{
+  position: relative;
+}
+
+.udemybusiness__popup{
+  position: absolute;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 200px;
+  top: 30px;
+  right: 20px;
+  display: none;
+}
+
+.udemybusiness:hover .udemybusiness__popup{
+  display: block;
+}
+
+.udemybusiness__popup__try{
+  background-color: #A435F0;
+  color: white;
+  padding: 10px;
+  border: #A435F0 solid 1px;
+  border-radius: 10px;
+  margin-top: 10px;
+  align-items: center;
+  padding-left: 25px;
+}
+
+/*teach popup*/
+.teach{
+  position: relative;
+}
+
+.teach__popup{
+  position: absolute;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 200px;
+  top: 30px;
+  right: 20px;
+  display: none;
+}
+
+.teach:hover .teach__popup{
+  display: block;
+}
+
+.teach__popup__learn{
+  background-color: #A435F0;
+  color: white;
+  padding: 10px;
+  border: #A435F0 solid 1px;
+  border-radius: 10px;
+  margin-top: 10px;
+  align-items: center;
+  padding-left: 53px;
+}
+
+/*My learning popup*/
+.mylearning{
+  position: relative;
+}
+
+.mylearning__popup{
+  position: absolute;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 200px;
+  top: 30px;
+  right: 20px;
+  display: none;
+}
+
+.mylearning:hover .mylearning__popup{
+  display: block;
+}
+
+.mylearning__popup__browse{
+  background-color: #A435F0;
+  color: white;
+  padding: 10px;
+  border: #A435F0 solid 1px;
+  border-radius: 10px;
+  margin-top: 10px;
+  align-items: center;
+  padding-left: 53px;
+}
+
+/*heart popup*/
+.heart{
+  position: relative;
+}
+
+.heart__popup{
+  position: absolute;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 100px;
+  top: 30px;
+  right: 20px;
+  display: none;
+}
+
+.heart:hover .heart__popup{
+  display: block;
+}
+
+/*shopping popup*/
+.shopping{
+  position: relative;
+}
+
+.shopping__popup{
+  position: absolute;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 100px;
+  top: 30px;
+  right: 20px;
+  display: none;
+}
+
+.shopping:hover .shopping__popup{
+  display: block;
+}
+
+/*notifications*/
+.notifications{
+  position: relative;
+}
+
+.notifications__popup{
+  position: absolute;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 150px;
+  top: 30px;
+  right: 20px;
+  display: none;
+}
+
+.notifications:hover .notifications__popup{
+  display: block;
+}
+
+.categories{
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: solid black 1px;
+}
+
+.categories p{
+  background-color: #A435F0;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border: solid #A435f0 1px;
+  cursor: pointer;
+}
+
+.categories p:hover{
+  background-color: aliceblue;
+  transition: 1s;
+  color: black;
+  border: solid #A435F0 1px;
+}
+
+.sale-image img{
+  width: 100%;
+}
+
+.sale-image{
+  position: relative;
+}
+
+.sale-image__offer{
+  width: 400px;
+  border: solid black 2px;
+  background-color: white;
+  padding: 2%;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  animation-name: zoom;
+  animation-duration: 4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.recommended{
+  padding: 20px;
+}
+
+.recommended__container{
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.course-card{
+  width: 300px;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+
+.course-card:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-card img{
+  width: 100%;
+  height: 60%;
+}
+
+.topics{
+  padding: 20px;
+}
+
+.topics__container{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.topics__container p{
+  border: solid gray 2px;
+  padding: 20px;
+  flex-grow: 1;
+  flex-basis: 25%;
+  cursor: pointer;
+}
+
+.topics__container p:hover{
+  background-color: darkgray;
+}
+
+.popular{
+  padding: 20px;
+}
+
+.popular__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer{
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+.footer__one{
+  display: flex;
+  gap: 10px;
+}
+
+.footer__one p{
+  margin: 20px;
+  cursor: pointer;
+}
+
+.footer__two{
+  margin: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px){
+  .categories{
+    flex-wrap: nowrap;
+    overflow-x: none;
+  }
+  .navbar{
+    flex-direction: column;
+  }
+  .container{
+    max-width: 100%;
+    padding: 10px;
+  }
+}
