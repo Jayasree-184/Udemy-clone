@@ -422,5 +422,10 @@ body {
       flex-basis: 20%;
       flex-grow: 1;
     }
+
+    .sale-image__offer{
+      height: 80px;
+      width: 250px;
+    }
   }
 }
